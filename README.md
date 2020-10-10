@@ -13,6 +13,8 @@ Get bugged via Slack or RocketChat to merge your GitHub pull requests or GitLab 
 
 </div>
 
+**This Fork:** This fork diverts from the origin by introducing Docker support.
+
 Pullbug can notify you on Slack or Rocket.Chat of all open pull and merge requests from GitHub or GitLab. This tool ensures requests never go unnoticed as it can be setup on a schedule to constantly bug you to merge your work. This is perfect for finding old or stale requests and helps you to stay current on new ones. Pass in a few environment variables, setup a [Slackbot](https://slack.com/help/articles/115005265703-Create-a-bot-for-your-workspace) or [Rocket.Chat](https://rocket.chat/docs/developer-guides/rest-api/integration/create/) integration and you're all set to be bugged by Pullbug.
 
 **NOTE:** Pullbug works best if you have link unfurling turned off for GitHub and GitLab on Slack or Rocket.Chat.
@@ -67,6 +69,14 @@ Environment Variables:
     SLACK_BOT_TOKEN     The Slackbot Token used to authenticate with Slack.
     SLACK_CHANNEL       The Slack channel to post a message to.
     ROCKET_CHAT_URL     The Rocket.Chat url of the room to post a message to.
+```
+
+### Docker
+
+Run Pullbug in a docker container:
+
+```bash
+docker-compose up -d
 ```
 
 ## Development

@@ -1,0 +1,12 @@
+version: '3.7'
+services: 
+    pullbug:
+        container_name: pullbug
+        build: .
+        environment:
+        - GITHUB_TOKEN=
+        - GITLAB_API_URL=
+        - GITLAB_API_KEY=
+        - SLACK_BOT_TOKEN=
+        - SLACK_CHANNEL=
+        - ROCKET_CHAT_URL=
